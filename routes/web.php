@@ -16,7 +16,7 @@ use App\Http\Controllers\AsesiController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('asesi.login');
 });
 
 Auth::routes();
@@ -28,4 +28,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [AsesiController::class, 'index'])->name('asesi.home');
 
     Route::get('/profile',[AsesiController::class, 'profile'])->name('asesi.profile');
+
+    Route::get('/edit-profile',[AsesiController::class, 'editProfile'])->name('asesi.edit.profile');
+
+    Route::put('update-profile',[AsesiController::class,'updateProfile'])->name('asesi.update.profile');
 });

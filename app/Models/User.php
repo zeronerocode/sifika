@@ -28,6 +28,7 @@ class User extends Authenticatable
         'hp',
         'password',
         'jurusan',
+        'skema',
     ];
 
     /**
