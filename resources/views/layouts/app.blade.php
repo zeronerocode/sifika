@@ -89,6 +89,7 @@
                                 <i class="nav-icon fas fa-power-off"></i>
                                 <p>Logout</p>
                             </a>
+                            </form>
                         </li>
                     </ul>
                 </nav>
